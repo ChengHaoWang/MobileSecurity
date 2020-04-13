@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question">
+        <item>父亲的名字</item>
+        <item>母亲的名字</item>
+        <item>姐姐的名字</item>
+        <item>儿子的名字</item>
+        <item>女儿的名字</item>
+    </string-array>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

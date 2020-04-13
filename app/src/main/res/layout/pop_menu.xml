@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dip"
+    android:layout_height="400dip"
+    android:orientation="vertical"
+    android:background="@drawable/popwindow">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/positiveOrderItem">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/up">
+        </ImageView>
+        <CheckBox android:id="@+id/positiveOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="升序"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:checked="false"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/reverseOrderItem">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/down">
+        </ImageView>
+        <CheckBox android:id="@+id/reverseOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="降序"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:checked="false"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/dayOrderItem">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/day">
+        </ImageView>
+        <CheckBox android:id="@+id/dayOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="按天排序"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:checked="false"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/weekOrderItem">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/week">
+        </ImageView>
+        <CheckBox android:id="@+id/weekOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="按周排序"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:checked="false"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/monothOrderItem">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/month">
+        </ImageView>
+        <CheckBox android:id="@+id/monothOrder"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="按月排序"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+
+            android:checked="false"
+            android:layoutDirection="rtl"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">流量管家</string>
+    <string name="phone_icon">Phone</string>
+    <string name="user_protocol">尊敬的用户：\n\t\t\t请您注册前阅读以下条款。\n\t\t\t好了，我也不知道条款应该怎么写，注册去吧。哦不，等一下，让我证明下开头空了两个字。</string>
+    <string name="user_protocol_title">服务条款</string>
+    <string name="register_title">请填写相关信息</string>
+    <string name="register_note">注册即代表同意</string>
+    <string name="phone_number">手机号码：</string>
+    <string name="password">密码：</string>
+    <string name="confirm_password">确认密码：</string>
+    <string name="find_password_title">找回密码</string>
+    <string name="title_activity_main_interface">MainInterface</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">流量</string>
+    <string name="title_dashboard">实时速度</string>
+    <string name="title_notifications">基本信息</string>
+
+    <string name="item_name">名称：</string>
+    <string name="flow">流量：</string>
+    <string name="all_time">时长：</string>
+    <string name="description">说明：</string>
+    <string name="speed">速度：</string>
+
+</resources>

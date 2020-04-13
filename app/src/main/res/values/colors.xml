@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <color name="colorAccent">#5CACEE</color>
+    <color name="label_round_orange">#1874CD</color>
+    <color name="label_orange">#F2F2F2</color>
+    <color name="actionbar">#5CACEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#bfbfbf</color>
+    <color name="gray_2">#dbdbdb</color>
+    <color name="gray_3">#dbdbdb</color>
+    <color name="green">#1afa29</color>
+</resources>

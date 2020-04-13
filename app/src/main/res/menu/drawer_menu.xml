@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_item1">
+        <item
+            android:id="@+id/phone_type"
+            android:icon="@drawable/phone_type"
+            android:title="手机型号"/>
+        <item
+            android:id="@+id/phone_mac"
+            android:icon="@drawable/headimage"
+            android:title="物理地址"/>
+        <item
+            android:id="@+id/employer"
+            android:icon="@drawable/headimage"
+            android:title="单    位"/>
+        <item
+            android:id="@+id/duty"
+            android:icon="@drawable/headimage"
+            android:title="职    务"/>
+        <item
+            android:id="@+id/contact_way"
+            android:icon="@drawable/headimage"
+            android:title="联系方式"/>
+        <item
+            android:id="@+id/personal_des"
+            android:icon="@drawable/headimage"
+            android:title="个人说明"/>
+    </group>
+</menu>
