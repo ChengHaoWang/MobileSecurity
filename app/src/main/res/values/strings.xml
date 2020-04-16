@@ -27,11 +27,15 @@
     <string name="title_home">流量</string>
     <string name="title_dashboard">实时速度</string>
     <string name="title_notifications">基本信息</string>
+    <string name="title_booklist">通讯录</string>
+    <string name="title_calllog">通话记录</string>
+    <string name="title_mes">信息</string>
 
     <string name="item_name">名称：</string>
     <string name="flow">流量：</string>
     <string name="all_time">时长：</string>
     <string name="description">说明：</string>
     <string name="speed">速度：</string>
+
 
 </resources>

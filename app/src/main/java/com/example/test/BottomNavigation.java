@@ -56,9 +56,11 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.example.test.ui.call_log.CallLogFragment;
 import com.example.test.ui.dashboard.DashboardFragment;
 import com.example.test.ui.home.HomeFragment;
 import com.example.test.ui.notifications.NotificationsFragment;
+import com.example.test.ui.booklist.BooklistFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.makeramen.roundedimageview.RoundedImageView;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
@@ -304,6 +306,7 @@ public class BottomNavigation extends FragmentActivity{
         }
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+
         setContentView(R.layout.activity_bottom_navigation);
         setStatusBarColor(BottomNavigation.this);
         final BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -321,6 +324,8 @@ public class BottomNavigation extends FragmentActivity{
         Fragment homeFragment=new Fragment();
         final DashboardFragment dashboardFragment=new DashboardFragment();
         final NotificationsFragment notificationsFragment=new NotificationsFragment();
+        final BooklistFragment booklistFragment=new BooklistFragment();
+        final CallLogFragment calllogFragment=new CallLogFragment();
         //获取当前Fragment
         manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
@@ -354,11 +359,23 @@ public class BottomNavigation extends FragmentActivity{
                     showFragment(notificationsFragment);
                     menu.setOnClickListener(null);
                 }
+                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_booklist))){
+                    title.setText(getResources().getString(R.string.title_booklist));
+                    showFragment(booklistFragment);
+                    menu.setOnClickListener(null);
+                }
+                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_calllog))){
+                    title.setText(getResources().getString(R.string.title_calllog));
+                    showFragment(calllogFragment);
+                    menu.setOnClickListener(null);
+                }
                 return true;
             }
         });
 
     }
+
+
 
 
     /**
