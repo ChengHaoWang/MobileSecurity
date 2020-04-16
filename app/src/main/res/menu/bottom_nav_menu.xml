@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/navigation_home"
@@ -11,17 +10,20 @@
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />
+
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
+
     <item
-        android:id="@+id/navigation_booklist"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_booklist" />
-    <item
-        android:id="@+id/navigation_calllog"
+        android:id="@+id/navigation_system_information"
         android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/title_calllog" />
+        android:title="@string/title_system_information" />
+
+    <item
+        android:id="@+id/navigation_sensor_information"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_sensor_information" />
 
 </menu>

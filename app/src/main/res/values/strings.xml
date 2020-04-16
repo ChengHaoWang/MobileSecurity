@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">流量管家</string>
+    <string name="app_name">Information Collector</string>
     <string name="phone_icon">Phone</string>
     <string name="user_protocol">尊敬的用户：\n\t\t\t请您注册前阅读以下条款。\n\t\t\t好了，我也不知道条款应该怎么写，注册去吧。哦不，等一下，让我证明下开头空了两个字。</string>
     <string name="user_protocol_title">服务条款</string>
@@ -27,15 +27,25 @@
     <string name="title_home">流量</string>
     <string name="title_dashboard">实时速度</string>
     <string name="title_notifications">基本信息</string>
-    <string name="title_booklist">通讯录</string>
-    <string name="title_calllog">通话记录</string>
-    <string name="title_mes">信息</string>
+    <string name="title_system_information">系统信息</string>
+    <string name="title_sensor_information">传感器信息</string>
 
     <string name="item_name">名称：</string>
     <string name="flow">流量：</string>
     <string name="all_time">时长：</string>
     <string name="description">说明：</string>
     <string name="speed">速度：</string>
+
+
+<!--    <string name="infoname1">加速度传感器</string>-->
+<!--    <string name="infoname2">陀螺仪传感器</string>-->
+<!--    <string name="infoname3">磁场传感器</string>-->
+<!--    <string name="infoname4">重力传感器</string>-->
+<!--    <string name="infoname5">线性加速度传感器</string>-->
+<!--    <string name="infoname6">温度传感器</string>-->
+<!--    <string name="infoname7">亮度传感器</string>-->
+<!--    <string name="infoname8">压力传感器</string>-->
+<!--    <string name="infoname9">加速度传感器</string>-->
 
 
 </resources>

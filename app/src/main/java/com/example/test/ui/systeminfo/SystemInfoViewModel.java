@@ -1,14 +1,13 @@
-package com.example.test.ui.booklist;
-
+package com.example.test.ui.systeminfo;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class BooklistViewModel extends ViewModel {
+public class SystemInfoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public BooklistViewModel() {
+    public SystemInfoViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("");
     }

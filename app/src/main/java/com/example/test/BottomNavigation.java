@@ -1,8 +1,6 @@
 package com.example.test;
 
 import android.Manifest;
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Service;
@@ -15,33 +13,22 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.os.PersistableBundle;
 import android.provider.Settings;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CheckBox;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -54,37 +41,13 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.example.test.ui.call_log.CallLogFragment;
 import com.example.test.ui.dashboard.DashboardFragment;
-import com.example.test.ui.home.HomeFragment;
 import com.example.test.ui.notifications.NotificationsFragment;
-import com.example.test.ui.booklist.BooklistFragment;
+import com.example.test.ui.systeminfo.SystemInfoFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.makeramen.roundedimageview.RoundedImageView;
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
-import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
-import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
 import java.lang.reflect.Method;
-import java.net.NetworkInterface;
-import java.util.Collections;
 import java.util.List;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 import static android.widget.LinearLayout.*;
 import static com.example.test.ApkTool.REQUEST_READ_PHONE_STATE;
@@ -306,7 +269,6 @@ public class BottomNavigation extends FragmentActivity{
         }
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
         setContentView(R.layout.activity_bottom_navigation);
         setStatusBarColor(BottomNavigation.this);
         final BottomNavigationView navView = findViewById(R.id.nav_view);
@@ -324,8 +286,7 @@ public class BottomNavigation extends FragmentActivity{
         Fragment homeFragment=new Fragment();
         final DashboardFragment dashboardFragment=new DashboardFragment();
         final NotificationsFragment notificationsFragment=new NotificationsFragment();
-        final BooklistFragment booklistFragment=new BooklistFragment();
-        final CallLogFragment calllogFragment=new CallLogFragment();
+        final SystemInfoFragment systemInfoFragment=new SystemInfoFragment();
         //获取当前Fragment
         manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
@@ -359,23 +320,24 @@ public class BottomNavigation extends FragmentActivity{
                     showFragment(notificationsFragment);
                     menu.setOnClickListener(null);
                 }
-                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_booklist))){
-                    title.setText(getResources().getString(R.string.title_booklist));
-                    showFragment(booklistFragment);
+                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_system_information))){
+                    title.setText(getResources().getString(R.string.title_system_information));
+                    showFragment(systemInfoFragment);//点击后跳转到对应的fragment
                     menu.setOnClickListener(null);
                 }
-                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_calllog))){
-                    title.setText(getResources().getString(R.string.title_calllog));
-                    showFragment(calllogFragment);
+                else if (menuItem.getTitle().toString().equals(getResources().getString(R.string.title_sensor_information))){
+//                    title.setText(getResources().getString(R.string.title_sensor_information));
+//                    showFragment(sensorInfoFragment);//点击后跳转到对应的fragment
+                    Intent intent=new Intent(BottomNavigation.this,GetSensorInfo.class);
+                    startActivity(intent);
                     menu.setOnClickListener(null);
                 }
+
                 return true;
             }
         });
 
     }
-
-
 
 
     /**
